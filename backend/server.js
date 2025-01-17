@@ -19,7 +19,8 @@ app.use(express.json()); // To allow json data to be sent in the request body
 app.use('/api/products', productRoutes)
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'frontend', 'dist')));  // Adjust the path if necessary
+    app.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')));
+  // Adjust the path if necessary
   
     // For any request that doesn't match an API route, serve the React app
     app.get('*', (req, res) => {
