@@ -7,15 +7,16 @@
     "build": "npm run install-frontend && npm run build-frontend",
     "install-frontend": "npm install --prefix frontend",
     "build-frontend": "npm run build --prefix frontend",
-    "start": "cross-env NODE_ENV=production node backend/server.js",
+    "start": "set NODE_ENV=production node backend/server.js",
     "frontend": "vite build --prefix frontend"
   },
- "type": "module",
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.9.4"
