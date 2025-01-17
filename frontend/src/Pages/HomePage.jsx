@@ -2,7 +2,7 @@ import { Container, SimpleGrid, Text, VStack, Spinner } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useProductStore } from "../store/product.js";
-import ProductCard from "../components/ProductCard.jsx";
+import ProductCard from "../Components/ProductCard.jsx";
 
 const NoProductsMessage = () => (
   <Text fontSize="xl" textAlign="center" fontWeight="bold" color="gray.500">
