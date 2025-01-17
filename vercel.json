@@ -1,5 +1,29 @@
 {
+  "version": 2,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/api/(.*)",
+      "destination": "/backend/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/$1"
+    }
+  ],
+  "projects": [
+    {
+      "name": "frontend",
+      "src": "./frontend",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist",
+      "framework": "vite"
+    },
+    {
+      "name": "backend",
+      "src": "./backend",
+      "buildCommand": "npm install",
+      "outputDirectory": ".",
+      "framework": "nodejs"
+    }
   ]
 }
