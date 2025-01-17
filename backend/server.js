@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { connectDB } from './config/db.js';
 import path from 'path';
+import url from 'url';
 import productRoutes from "./routes/product.route.js";
 
 dotenv.config();
