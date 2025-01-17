@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useProductStore } from "../store/product";
+import { useProductStore } from "../store/product.js";
 
 const CreatePage = () => {
   const [newProduct, setNewProduct] = useState({
