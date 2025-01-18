@@ -6,7 +6,7 @@
     "dev": " nodemon backend/server.js",
 		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
 		"start": " node backend/server.js",
-    "build:combined": "npm run build && npm run start"
+    "build:combined": "npm run build && npm run start && npm run dev"
 },
 
   "type": "module",
