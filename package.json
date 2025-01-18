@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "set NODE_ENV=development nodemon backend/server.js",
-    "build": "npm run install-frontend && npm run build-frontend",
-    "install-frontend": "npm install --prefix frontend",
-    "build-frontend": "npm run build --prefix frontend",
-    "start": "set NODE_ENV=production node backend/server.js",
-    "frontend": "vite build --prefix frontend"
-  },
+    "dev": " nodemon backend/server.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+		"start": " node backend/server.js"
+},
+
   "type": "module",
   "keywords": [],
   "author": "",
